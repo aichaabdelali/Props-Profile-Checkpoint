@@ -19,13 +19,7 @@ const Profile = (props) => {
   return (
     <div>
       <h2 style={{ fontFamily: "sans-serif", textAlign: "center" }}> Name : {props.fullName} </h2>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQxj9ZTZxcHRhi80Y0K_1zFiAEZmsdHxaj2w&usqp=CAU"
-        alt="avatar"
-        width="200px"
-        height="200px"
-        style={{ paddingLeft: "580px" }}
-      />
+      {props.children}
       <h4 style={{ fontFamily: "sans-serif", textAlign: "center" }}> Bio : {props.bio} </h4>
       <h4 style={{ fontFamily: "sans-serif", textAlign: "center" }}>
         {" "}
